@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Transform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(0.125turn); */
+            /* transform-origin: -50% -50%; */
+            /* transform: rotateZ(9deg); */
+            /* transform: skewY(34deg); */
+            /* transform: translateY(100%) skewX(40deg) translateX(45%); */
+            /* transform: matrix3d(5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 45, 0, 0, 0, 0, 1); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            margin: 55px;
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            box
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Translate Example</title>
+  <style>
+    body { text-align: center; font-family: Arial; }
+    .box {
+      width: 150px; height: 150px;
+      margin: 50px auto;
+      background: lightblue;
+      border: 2px solid navy;
+      transition: transform 0.5s;
+    }
+    .box:hover {
+      transform: translate(50px, 30px);
+    }
+  </style>
+</head>
+<body>
+  <h2>Translate Example</h2>
+  <div class="box"></div>
+  <p>Hover the box to see it shift <b>50px right</b> and <b>30px down</b>.</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Rotate Example</title>
+  <style>
+    body { text-align: center; font-family: Arial; }
+    .box {
+      width: 150px; height: 150px;
+      margin: 50px auto;
+      background: lightcoral;
+      border: 2px solid maroon;
+      transition: transform 0.5s;
+    }
+    .box:hover {
+      transform: rotate(-15deg);
+    }
+  </style>
+</head>
+<body>
+  <h2>Rotate Example</h2>
+  <div class="box"></div>
+  <p>Hover the box to rotate it <b>15 degrees counterclockwise</b>.</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Scale Example</title>
+  <style>
+    body { text-align: center; font-family: Arial; }
+    .box {
+      width: 150px; height: 150px;
+      margin: 50px auto;
+      background: lightgreen;
+      border: 2px solid darkgreen;
+      transition: transform 0.5s;
+    }
+    .box:hover {
+      transform: scale(1.4, 1.2);
+    }
+  </style>
+</head>
+<body>
+  <h2>Scale Example</h2>
+  <div class="box"></div>
+  <p>Hover the box to increase its <b>width by 1.4x</b> and <b>height by 1.2x</b>.</p>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Skew Example</title>
+  <style>
+    body { text-align: center; font-family: Arial; }
+    .box {
+      width: 150px; height: 150px;
+      margin: 50px auto;
+      background: lightgoldenrodyellow;
+      border: 2px solid goldenrod;
+      transition: transform 0.5s;
+    }
+    .box:hover {
+      transform: skew(15deg, 10deg);
+    }
+  </style>
+</head>
+<body>
+  <h2>Skew Example</h2>
+  <div class="box"></div>
+  <p>Hover the box to skew it <b>15° horizontally</b> and <b>10° vertically</b>.</p>
+</body>
+</html>
